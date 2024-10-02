@@ -38,6 +38,8 @@ dependencies:
 #  Flutter app's launcher icon.
   icons_launcher: ^3.0.0
 
+  flutter_native_splash: ^2.4.1
+
 
 
 icons_launcher:
@@ -47,7 +49,7 @@ icons_launcher:
       enable: true
     ios:
       enable: true
-      
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -102,3 +104,4 @@ flutter:
   # see https://flutter.dev/to/font-from-package
   assets:
     - assets/images/logo.png
+    - assets/images/splash_screen.png
