@@ -52,7 +52,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             Padding(
               padding: const EdgeInsets.only(top: 80.0),
               child: Center(
-                child: Icon(IconMoon.logo,size:60,color:AppColor.primaryColor90),
+                child: Icon(IconMoon.logo,size:50,color:AppColor.primaryColor90),
               ),
             ),
 
@@ -126,7 +126,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       width: 10,
       margin: EdgeInsets.symmetric(horizontal: 5),
       decoration: BoxDecoration(
-        color: _currentPage == index ? Colors.blue : Colors.grey,
+        color: _currentPage == index ? AppColor.primaryColor90 : AppColor.mainBlack40,
         shape: BoxShape.circle,
       ),
     );
