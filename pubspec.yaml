@@ -40,6 +40,10 @@ dependencies:
 
   flutter_native_splash: ^2.4.1
 
+  flutter_svg: ^2.0.10+1
+
+  flutter_screenutil: ^5.9.3
+
 
 
 icons_launcher:
@@ -104,4 +108,14 @@ flutter:
   # see https://flutter.dev/to/font-from-package
   assets:
     - assets/images/logo.png
+    - assets/images/onboarding_1.png
+    - assets/images/onboarding_2.png
     - assets/images/splash_screen.png
+
+  fonts:
+    - family: FFShamelFamily-SansOneBold
+      fonts:
+        - asset: assets/fonts/FFShamelFamily-SansOneBold.ttf
+    - family: icomoon
+      fonts:
+        - asset: assets/icons/icomoon.ttf
