@@ -9,5 +9,7 @@ class AssetsRes {
   static const String PLUGIN_NAME = 'manasa';
   static const String PLUGIN_VERSION = '1.0.0+1';
   static const String LOGO = 'assets/images/logo.png';
+  static const String ONBOARDING_1 = 'assets/images/onboarding_1.png';
+  static const String ONBOARDING_2 = 'assets/images/onboarding_2.png';
   static const String SPLASH_SCREEN = 'assets/images/splash_screen.png';
 }
