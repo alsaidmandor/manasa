@@ -78,7 +78,7 @@ class TextStyles {
   static TextStyle fontBody16BlackMedium = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeightHelper.medium,
-    color:AppColor.mainBlack60,
+    color:AppColor.mainBlack90,
   );
 
   // Roboto (Regular)

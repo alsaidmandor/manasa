@@ -8,6 +8,7 @@ class AppLanguageModel
   String? body3;
   String? loginTitle;
   String? loginSubTitle;
+  String? name;
   String? email;
   String? password;
   String? login;
@@ -36,6 +37,7 @@ class AppLanguageModel
     this.body3,
     this.loginTitle,
     this.loginSubTitle,
+    this.name,
     this.email,
     this.password,
     this.login,
@@ -66,6 +68,7 @@ class AppLanguageModel
     body3 = json['body3'];
     loginTitle = json['loginTitle'];
     loginSubTitle = json['loginSubTitle'];
+    name = json['name'];
     email = json['email'];
     password = json['password'];
     login = json['login'];

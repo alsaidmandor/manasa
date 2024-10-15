@@ -17,6 +17,7 @@ class AppColor {
   static const Color mainBlack40 = Color(0xFFC9CECF);
   static const Color mainBlack20 = Color(0xFFDDDFDF);
   static const Color mainBlack10 = Color(0xFFE6E9EA);
+  static const Color mainBlack5 = Color(0xFFF9FAFA);
 
   // other color
   static const Color white = Color(0xFFFFFFFF);
