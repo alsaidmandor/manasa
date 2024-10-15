@@ -23,6 +23,12 @@ class TtextTheme{
       selectedItemColor: AppColor.mainBlack90,
       unselectedItemColor: AppColor.mainBlack90,
     ),
+    pageTransitionsTheme: PageTransitionsTheme(
+      builders: <TargetPlatform, PageTransitionsBuilder>{
+        TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
+        TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+      },
+    ),
 
   );
   static final darkTheme = TextTheme();

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:manasa/core/route/routes.dart';
 
 import '../../Features/onboarding/ui/boarding_screen.dart';
+import '../../Features/sign-up/ui/signup_screen.dart';
 
 
 class AppRouter {
@@ -15,7 +16,10 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const OnboardingScreen(),
         );
-
+      case Routes.signUpScreen:
+        return MaterialPageRoute(
+          builder: (_) => const SignupScreen(),
+        );
       default:
         return null;
     }

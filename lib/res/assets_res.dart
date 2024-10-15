@@ -12,4 +12,5 @@ class AssetsRes {
   static const String ONBOARDING_1 = 'assets/images/onboarding_1.png';
   static const String ONBOARDING_2 = 'assets/images/onboarding_2.png';
   static const String SPLASH_SCREEN = 'assets/images/splash_screen.png';
+  static const String AR = 'assets/translation/ar.json';
 }
