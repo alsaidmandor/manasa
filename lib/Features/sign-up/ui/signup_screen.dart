@@ -38,7 +38,12 @@ class _SignupScreenState extends State<SignupScreen> {
                     children: [
                       FormSignup(),
                       verticalSpace(20),
-                      AppTextButton(buttonText: appLang(context)!.registerNow!, textStyle: TextStyles.fontHeading18BlackBold.copyWith(color: AppColor.white), onPressed: () {  },)
+                      AppTextButton(
+                        buttonText: appLang(context)!.registerNow!,
+                        textStyle: TextStyles.fontHeading18BlackBold
+                            .copyWith(color: AppColor.white),
+                        onPressed: () {},
+                      )
                     ],
                   )
                 ],
