@@ -1,5 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:manasa/Features/sign-up/data/repo/signup_repository.dart';
+import 'package:manasa/Features/sign-up/ui/logic/signup_cubit.dart';
 import 'package:manasa/core/route/routes.dart';
 
 import '../../Features/onboarding/ui/boarding_screen.dart';
@@ -18,7 +21,9 @@ class AppRouter {
         );
       case Routes.signUpScreen:
         return MaterialPageRoute(
-          builder: (_) => const SignupScreen(),
+          builder: (_) => BlocProvider(
+              create: (context) => SignupCubit(SignupRepository()),
+              child: const SignupScreen()),
         );
       default:
         return null;

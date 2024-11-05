@@ -18,8 +18,7 @@ class AppTextFormField extends StatelessWidget {
   final Color? backgroundColor;
   final TextEditingController? controller;
   final Function(String?) validator;
-  final Function(String?)? onSaved;
-  final Function(String)? onChange;
+
 
   final List<String>? autoFillHint;
 
@@ -40,13 +39,13 @@ class AppTextFormField extends StatelessWidget {
     this.backgroundColor,
     this.controller,
     required this.validator,
-    this.onSaved,
+
     this.autoFillHint,
     this.textInputAction,
     this.onEditingComplete,
     this.prefixIcon,
     this.radius = 16,
-    this.textInputType, this.onChange,
+    this.textInputType,
   });
 
   @override
@@ -106,12 +105,7 @@ class AppTextFormField extends StatelessWidget {
       validator: (value) {
         return validator(value);
       },
-      onSaved: (value) {
-        onSaved!(value);
-      },
-      onChanged: (value) {
-        onChange!(value);
-      },
+
     );
   }
 }
