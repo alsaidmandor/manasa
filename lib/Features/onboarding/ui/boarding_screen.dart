@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:manasa/core/helper/extensions.dart';
+import 'package:manasa/core/route/routes.dart';
 
 import '../../../core/theme/app_color.dart';
 import '../../../core/theme/icon_moon.dart';
@@ -107,7 +109,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     _pageController.nextPage(duration: Duration(milliseconds: 500), curve:Curves.fastOutSlowIn);
                   } else {
                     // Navigate to the main app after finishing onboarding
-                    // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MainScreen()));
+                    context.pushReplacementNamed(Routes.signUpScreen );
                   }
                 },buttonWidth: 150,),
               ],

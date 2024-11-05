@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "140647739257",
+    "project_id": "manasa-522f6",
+    "storage_bucket": "manasa-522f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140647739257:android:ffa5b04bb7e1c6291249a8",
+        "android_client_info": {
+          "package_name": "com.soft.alsd.manasa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Pn3v11GEi3BH25Ovx6VY29QTWLgyIRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
