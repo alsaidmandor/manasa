@@ -11,19 +11,15 @@ import 'generated/l10n.dart';
 
 class ManasaApp extends StatelessWidget {
   final AppRouter appRouter;
-  final String translationFile;
-  final String code;
-  const ManasaApp({super.key, required this.appRouter, required this.translationFile, required this.code});
+
+  const ManasaApp({super.key, required this.appRouter, });
 
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
         providers: [
         BlocProvider(
-        create: (context) => AppCubit()..setLanguage(
-      translationFile: translationFile,
-      code: code,
-    ),
+        create: (context) => AppCubit()
     ),
     ],
 
