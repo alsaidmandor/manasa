@@ -20,15 +20,15 @@ Future<void> main() async {
     ),
   );
   Bloc.observer = MyBlocObserver();
-  appLanguage =  getAppLanguage();
+  // appLanguage =  getAppLanguage();
 
-  String translation = await getTranslationFile(appLanguage);
+  // String translation = await getTranslationFile(appLanguage);
 
   await ScreenUtil.ensureScreenSize();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(ManasaApp(    appRouter: AppRouter(), translationFile: translation, code: appLanguage,));
+  runApp(ManasaApp(    appRouter: AppRouter()));
 
 }
 
