@@ -29,7 +29,7 @@ class SignupRepository {
   Future<FirebaseResult<String>> saveUserData({required SignupRequest  request }) async {
     try {
 
-      var signupRequest = request.copyWith(id: firebaseAuth.currentUser!.uid);
+      var signupRequest = request.copyWith(id: firebaseAuth.currentUser!.uid, password: '');
      await  firestore.collection(user).doc(signupRequest.id).set(signupRequest.toMap());
       return FirebaseResult.success("User data saved successfully");
     } on FirebaseAuthException catch (error,stackTrace) {

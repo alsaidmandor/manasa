@@ -24,16 +24,17 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alreadyHaveAccount":
             MessageLookupByLibrary.simpleMessage("تمتلك حساب بالفعل؟ "),
-        "body1": MessageLookupByLibrary.simpleMessage("محتوي ١١"),
-        "body2": MessageLookupByLibrary.simpleMessage("محتوي ٢٢"),
-        "body3": MessageLookupByLibrary.simpleMessage("محتوي ٣٣"),
         "browse": MessageLookupByLibrary.simpleMessage("اكتشف الأقسام"),
         "cart": MessageLookupByLibrary.simpleMessage("السلة"),
         "categories": MessageLookupByLibrary.simpleMessage("الأقسام"),
+        "create_account":
+            MessageLookupByLibrary.simpleMessage(" قم بإنشاء حساب "),
         "currency": MessageLookupByLibrary.simpleMessage("ريال"),
         "discount": MessageLookupByLibrary.simpleMessage("خصم"),
         "donNotHave": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "forgot_password":
+            MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل دخول"),
         "loginFailure":
@@ -45,6 +46,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginTitle": MessageLookupByLibrary.simpleMessage("سجل دخولك"),
         "name": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
         "new_arrivals": MessageLookupByLibrary.simpleMessage("منتجات جديدة"),
+        "or": MessageLookupByLibrary.simpleMessage("أو"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "registerFailure":
             MessageLookupByLibrary.simpleMessage("فشل في التسجيل!"),
@@ -55,8 +57,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "search": MessageLookupByLibrary.simpleMessage("ابحث عن منتج"),
         "see": MessageLookupByLibrary.simpleMessage("الكل"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
-        "title2": MessageLookupByLibrary.simpleMessage("عنوان ٢٢"),
-        "title3": MessageLookupByLibrary.simpleMessage("عنوان ٣٣"),
+        "sign_in_with_apple":
+            MessageLookupByLibrary.simpleMessage("تسجيل بواسطة أبل"),
+        "sign_in_with_google":
+            MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل"),
         "titleSignup": MessageLookupByLibrary.simpleMessage("حساب جديد")
       };
 }

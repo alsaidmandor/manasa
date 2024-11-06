@@ -24,17 +24,18 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alreadyHaveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account? "),
-        "body1": MessageLookupByLibrary.simpleMessage("Content 11"),
-        "body2": MessageLookupByLibrary.simpleMessage("Content 22"),
-        "body3": MessageLookupByLibrary.simpleMessage("Content 33"),
         "browse": MessageLookupByLibrary.simpleMessage("Explore Categories"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "categories": MessageLookupByLibrary.simpleMessage("Categories"),
+        "create_account":
+            MessageLookupByLibrary.simpleMessage("Create an Account"),
         "currency": MessageLookupByLibrary.simpleMessage("Riyal"),
         "discount": MessageLookupByLibrary.simpleMessage("Discount"),
         "donNotHave":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "forgot_password":
+            MessageLookupByLibrary.simpleMessage("Forgot Password?"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginFailure":
@@ -46,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginTitle": MessageLookupByLibrary.simpleMessage("Log In"),
         "name": MessageLookupByLibrary.simpleMessage("Full Name"),
         "new_arrivals": MessageLookupByLibrary.simpleMessage("New Arrivals"),
+        "or": MessageLookupByLibrary.simpleMessage("Or"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "registerFailure":
             MessageLookupByLibrary.simpleMessage(" Signup Failure!"),
@@ -57,8 +59,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "search": MessageLookupByLibrary.simpleMessage("Search for a product"),
         "see": MessageLookupByLibrary.simpleMessage("See All"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
-        "title2": MessageLookupByLibrary.simpleMessage("Title 22"),
-        "title3": MessageLookupByLibrary.simpleMessage("Title 33"),
+        "sign_in_with_apple":
+            MessageLookupByLibrary.simpleMessage("Sign in with Apple"),
+        "sign_in_with_google":
+            MessageLookupByLibrary.simpleMessage("Sign in with Google"),
         "titleSignup": MessageLookupByLibrary.simpleMessage("New Account")
       };
 }

@@ -43,7 +43,8 @@ class _FormSignupState extends State<FormSignup> {
               controller: read.passwordController,
               hintText: S.of(context).password,
               validator: (String? value) {},
-              isObscureText: true,
+              isObscureText: isPasswordObscureText,
+
               suffixIcon:  GestureDetector(
                 onTap: () {
                   setState(() {

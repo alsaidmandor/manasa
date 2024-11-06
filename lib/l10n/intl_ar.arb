@@ -1,10 +1,6 @@
 {
   "titleSignup":"حساب جديد",
-  "title2": "عنوان ٢٢",
-  "title3": "عنوان ٣٣",
-  "body1": "محتوي ١١",
-  "body2": "محتوي ٢٢",
-  "body3": "محتوي ٣٣",
+
   "loginTitle": "سجل دخولك",
   "loginSubTitle": "سجل دخولك كي تتمكن من الإطلاع علي أجدد العروض",
   "name": "الاسم كامل",
@@ -18,6 +14,11 @@
   "registerFailure": "فشل في التسجيل!",
   "loginSuccessful": "تم تسجيل الدخول بنجاح!",
   "loginFailure": "فشل في تسجيل الدخول!",
+  "forgot_password": "نسيت كلمة المرور؟",
+  "or": "أو",
+  "create_account":" قم بإنشاء حساب ",
+  "sign_in_with_google":"تسجيل بواسطة جوجل",
+  "sign_in_with_apple":"تسجيل بواسطة أبل",
   "home": "الرئيسية",
   "categories": "الأقسام",
   "cart": "السلة",

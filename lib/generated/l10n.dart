@@ -60,56 +60,6 @@ class S {
     );
   }
 
-  /// `Title 22`
-  String get title2 {
-    return Intl.message(
-      'Title 22',
-      name: 'title2',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Title 33`
-  String get title3 {
-    return Intl.message(
-      'Title 33',
-      name: 'title3',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Content 11`
-  String get body1 {
-    return Intl.message(
-      'Content 11',
-      name: 'body1',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Content 22`
-  String get body2 {
-    return Intl.message(
-      'Content 22',
-      name: 'body2',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Content 33`
-  String get body3 {
-    return Intl.message(
-      'Content 33',
-      name: 'body3',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Log In`
   String get loginTitle {
     return Intl.message(
@@ -235,6 +185,56 @@ class S {
     return Intl.message(
       ' Login Failure !',
       name: 'loginFailure',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get forgot_password {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgot_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Or`
+  String get or {
+    return Intl.message(
+      'Or',
+      name: 'or',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create an Account`
+  String get create_account {
+    return Intl.message(
+      'Create an Account',
+      name: 'create_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in with Google`
+  String get sign_in_with_google {
+    return Intl.message(
+      'Sign in with Google',
+      name: 'sign_in_with_google',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in with Apple`
+  String get sign_in_with_apple {
+    return Intl.message(
+      'Sign in with Apple',
+      name: 'sign_in_with_apple',
       desc: '',
       args: [],
     );
