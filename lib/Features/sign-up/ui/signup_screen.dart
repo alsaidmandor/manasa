@@ -31,7 +31,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
       listener: (context, state) {
         if (state is SignupLoading) {
-          return buildLoading() ;
+          return buildLoading();
         }
         else if (state is SignupSuccess) {
           snackBarAnimation(context, S
@@ -60,7 +60,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           .titleSignup,
                       style: TextStyles.fontHeading20BlackBold,
                     ),
-                    verticalSpace(20),
+                    verticalSpace(50),
                     Column(
                       children: [
                         FormSignup(),
@@ -76,7 +76,17 @@ class _SignupScreenState extends State<SignupScreen> {
                           },
                         ),
                         verticalSpace(20),
-                        IsHaveAccount()
+              Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(S.of(context).alreadyHaveAccount,style: TextStyles.fontBody14BlackRegular.copyWith(color: AppColor.mainBlack60),),
+                    TextButton(
+                      onPressed: () {
+                        context.pushReplacementNamed( Routes.loginScreen);
+                      }, child: Text(S.of(context).login,style: TextStyles.fontBody14BlackRegular.copyWith(color: AppColor.primaryColor90)),)
+
+                  ]
+              )
                       ],
                     )
                   ],
@@ -90,29 +100,13 @@ class _SignupScreenState extends State<SignupScreen> {
   }
 
   void buildLoading() {
-     Center(
+    Center(
       child: CircularProgressIndicator(),
     );
   }
 
 }
-class IsHaveAccount extends StatelessWidget {
-  const IsHaveAccount({
-    super.key,
-  });
 
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(S.of(context).alreadyHaveAccount,style: TextStyles.fontBody14BlackRegular.copyWith(color: AppColor.mainBlack60),),
-        TextButton(
-          onPressed: () {
-            context.pushReplacementNamed( Routes.loginScreen);
-          }, child: Text(S.of(context).login,style: TextStyles.fontBody14BlackRegular.copyWith(color: AppColor.primaryColor90)),)
 
-        ]
-    );
-  }
-}
+
+

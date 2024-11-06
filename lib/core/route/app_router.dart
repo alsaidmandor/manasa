@@ -7,6 +7,7 @@ import 'package:manasa/Features/sign-up/ui/logic/signup_cubit.dart';
 import 'package:manasa/core/route/routes.dart';
 
 import '../../Features/login/ui/logic/login_cubit.dart';
+import '../../Features/login/ui/login_screen.dart';
 import '../../Features/onboarding/ui/boarding_screen.dart';
 import '../../Features/sign-up/ui/signup_screen.dart';
 
@@ -31,7 +32,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
               create: (context) => LoginCubit(LoginRepository()),
-              child: const SignupScreen()),
+              child: const LoginScreen()),
         );
       default:
         return null;
