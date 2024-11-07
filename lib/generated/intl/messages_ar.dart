@@ -35,6 +35,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+        "forgot_password_2":
+            MessageLookupByLibrary.simpleMessage("نسيان كلمة المرور"),
+        "forgot_password_3":
+            MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
+        "forgot_password_title": MessageLookupByLibrary.simpleMessage(
+            "لا تقلق، ما عليك سوى كتابة بريدك الإلكتروني وسنرسل لك رسالة لإعادة إنشاء كلمة مرور جديدة"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل دخول"),
         "loginFailure":
@@ -53,6 +59,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "registerNow": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
         "registerSuccessful":
             MessageLookupByLibrary.simpleMessage("تم التسجيل بنجاح!"),
+        "resent_password_failure": MessageLookupByLibrary.simpleMessage(
+            " حدث خطأ أثناء إرسال البريد الإلكتروني. يرجى المحاولة مرة أخرى.  "),
+        "resent_password_successful": MessageLookupByLibrary.simpleMessage(
+            " تم إرسال البريد الإلكتروني بنجاح. "),
         "salla": MessageLookupByLibrary.simpleMessage("سلة"),
         "search": MessageLookupByLibrary.simpleMessage("ابحث عن منتج"),
         "see": MessageLookupByLibrary.simpleMessage("الكل"),

@@ -11,7 +11,7 @@ class TtextTheme{
     primaryColor: AppColor.primaryColor90,
     fontFamily: FontRes.FFSHAMELFAMILY_SANSONEBOLD,
     appBarTheme: const AppBarTheme(
-        backgroundColor: AppColor.primaryColor10,
+        backgroundColor: AppColor.white,
         elevation: 0,
         iconTheme: IconThemeData(color: AppColor.mainBlack90),
         centerTitle: true),

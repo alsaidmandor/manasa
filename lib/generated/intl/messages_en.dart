@@ -36,6 +36,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+        "forgot_password_2":
+            MessageLookupByLibrary.simpleMessage("Forgot Password"),
+        "forgot_password_3":
+            MessageLookupByLibrary.simpleMessage("Forgot Password"),
+        "forgot_password_title": MessageLookupByLibrary.simpleMessage(
+            "Don\'t worry, just enter your email address and we\'ll send you a new password"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginFailure":
@@ -55,6 +61,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Create a New Account"),
         "registerSuccessful":
             MessageLookupByLibrary.simpleMessage(" Signup successful !"),
+        "resent_password_failure": MessageLookupByLibrary.simpleMessage(
+            " An error occurred while sending the email. Please try again. "),
+        "resent_password_successful": MessageLookupByLibrary.simpleMessage(
+            " The email has been sent successfully. "),
         "salla": MessageLookupByLibrary.simpleMessage("Salla"),
         "search": MessageLookupByLibrary.simpleMessage("Search for a product"),
         "see": MessageLookupByLibrary.simpleMessage("See All"),

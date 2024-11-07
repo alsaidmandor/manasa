@@ -61,7 +61,7 @@ class LoginScreen extends StatelessWidget {
                       textStyle: TextStyles.fontBody16BlackMedium
                           .copyWith(color: AppColor.primaryColor90),
                       onPressed: () {
-                        context.read<LoginCubit>().login();
+                        context.pushNamed(Routes.forgetPassword);
                       },
                     ),
                   ),

@@ -200,6 +200,56 @@ class S {
     );
   }
 
+  /// `Forgot Password`
+  String get forgot_password_2 {
+    return Intl.message(
+      'Forgot Password',
+      name: 'forgot_password_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password`
+  String get forgot_password_3 {
+    return Intl.message(
+      'Forgot Password',
+      name: 'forgot_password_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't worry, just enter your email address and we'll send you a new password`
+  String get forgot_password_title {
+    return Intl.message(
+      'Don\'t worry, just enter your email address and we\'ll send you a new password',
+      name: 'forgot_password_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` The email has been sent successfully. `
+  String get resent_password_successful {
+    return Intl.message(
+      ' The email has been sent successfully. ',
+      name: 'resent_password_successful',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` An error occurred while sending the email. Please try again. `
+  String get resent_password_failure {
+    return Intl.message(
+      ' An error occurred while sending the email. Please try again. ',
+      name: 'resent_password_failure',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Or`
   String get or {
     return Intl.message(
