@@ -7,6 +7,8 @@ import 'package:manasa/Features/sign-up/data/repo/signup_repository.dart';
 import 'package:manasa/Features/sign-up/ui/logic/signup_cubit.dart';
 import 'package:manasa/core/route/routes.dart';
 
+import '../../Features/Home/ui/home_screen.dart';
+import '../../Features/Home/ui/logic/home_cubit.dart';
 import '../../Features/forget_password/ui/forget_password_screen.dart';
 import '../../Features/forget_password/ui/logic/forget_password_cubit.dart';
 import '../../Features/login/ui/logic/login_cubit.dart';
@@ -42,6 +44,12 @@ class AppRouter {
           builder: (_) => BlocProvider(
               create: (context) => ForgetPasswordCubit(ForgetPasswordRepository()),
               child: const ForgetPasswordScreen()),
+        );
+      case Routes.homeScreen:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+              create: (context) => HomeCubit(),
+              child: const HomeScreen()),
         );
       default:
         return null;

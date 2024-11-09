@@ -65,12 +65,18 @@ class MessageLookup extends MessageLookupByLibrary {
             " تم إرسال البريد الإلكتروني بنجاح. "),
         "salla": MessageLookupByLibrary.simpleMessage("سلة"),
         "search": MessageLookupByLibrary.simpleMessage("ابحث عن منتج"),
+        "search_courses":
+            MessageLookupByLibrary.simpleMessage("البحث عن الكورسات"),
         "see": MessageLookupByLibrary.simpleMessage("الكل"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "sign_in_with_apple":
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطة أبل"),
         "sign_in_with_google":
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل"),
+        "start_message_home":
+            MessageLookupByLibrary.simpleMessage("مرحبا بك! .."),
+        "subtitle_message_home":
+            MessageLookupByLibrary.simpleMessage("ماذا تود أن تتعلم؟"),
         "titleSignup": MessageLookupByLibrary.simpleMessage("حساب جديد")
       };
 }

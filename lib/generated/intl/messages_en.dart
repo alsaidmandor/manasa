@@ -67,12 +67,18 @@ class MessageLookup extends MessageLookupByLibrary {
             " The email has been sent successfully. "),
         "salla": MessageLookupByLibrary.simpleMessage("Salla"),
         "search": MessageLookupByLibrary.simpleMessage("Search for a product"),
+        "search_courses":
+            MessageLookupByLibrary.simpleMessage("Search for Courses"),
         "see": MessageLookupByLibrary.simpleMessage("See All"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "sign_in_with_apple":
             MessageLookupByLibrary.simpleMessage("Sign in with Apple"),
         "sign_in_with_google":
             MessageLookupByLibrary.simpleMessage("Sign in with Google"),
+        "start_message_home":
+            MessageLookupByLibrary.simpleMessage("Welcome! .."),
+        "subtitle_message_home": MessageLookupByLibrary.simpleMessage(
+            "What would you like to learn?"),
         "titleSignup": MessageLookupByLibrary.simpleMessage("New Account")
       };
 }

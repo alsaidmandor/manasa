@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'Features/Home/ui/home_screen.dart';
 import 'Features/onboarding/ui/boarding_screen.dart';
 import 'core/route/app_router.dart';
 import 'core/app_cubit/app_cubit.dart';
 import 'core/route/routes.dart';
 import 'core/theme/text_theme.dart';
+import 'core/utils/constants.dart';
 import 'generated/l10n.dart';
 
 class ManasaApp extends StatelessWidget {
@@ -40,7 +42,7 @@ class ManasaApp extends StatelessWidget {
           theme: TtextTheme.lightTheme,
           initialRoute: Routes.onBoardingScreen,
           onGenerateRoute: appRouter.generateRoute,
-          home: OnboardingScreen(),
+          home: isLoggedInUser ? const HomeScreen() : const OnboardingScreen(),
         ),
       ),
     );

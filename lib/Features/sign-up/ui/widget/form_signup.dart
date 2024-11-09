@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:manasa/Features/sign-up/ui/logic/signup_cubit.dart';
-import 'package:manasa/core/app_cubit/app_cubit.dart';
 
 import '../../../../core/helper/spacing.dart';
 import '../../../../core/theme/icon_moon.dart';
-import '../../../../core/utils/constants.dart';
 import '../../../../core/widget/app_text_form_field.dart';
 import '../../../../generated/l10n.dart';
 
