@@ -10,18 +10,18 @@ import '../model/signup_request.dart';
 class SignupRepository {
 
 
-  FirebaseResult<String> createAccount({required SignupRequest  request })
+  Future<FirebaseResult<User>?>createAccount({required SignupRequest  request })async
   {
     try{
-       firebaseAuth.createUserWithEmailAndPassword(email: request.email!, password: request.password!);
+       await firebaseAuth.createUserWithEmailAndPassword(email: request.email!, password: request.password!);
        saveUserData(request: request);
-      return FirebaseResult.success("User created successfully");
+      return FirebaseResult.success(getUser!);
     }catch (error, stackTrace) {
       // Report error to Crashlytics
       FirebaseCrashlytics.instance.recordError(error, stackTrace);
       // Handle error here
       debugPrint('show error here : ${error.toString()}');
-      return FirebaseResult.failure(error.toString());
+  return FirebaseResult.failure(error as User);
     }
   }
 

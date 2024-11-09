@@ -33,5 +33,17 @@
   "currency": "Riyal",
   "browse": "Explore Categories",
   "new_arrivals": "New Arrivals",
-  "see": "See All"
+  "see": "See All",
+  "start_message_home" : "Welcome! ..",
+  "subtitle_message_home" : "What would you like to learn?",
+  "search_courses": "Search for Courses",
+  "development": "Development",
+  "business" : "Business",
+  "design" : "Design",
+  "marketing" : "Marketing",
+  "health & fitness" : "Health & Fitness",
+  "art & creativity": "Art & Creativity",
+  "Photography" : "Photography",
+  "Music" : "Music",
+
 }

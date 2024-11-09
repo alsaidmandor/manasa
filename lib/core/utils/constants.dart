@@ -1,12 +1,13 @@
-import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:logger/logger.dart';
-import '../model/app_language_model.dart';
-import '../app_cubit/app_cubit.dart';
+
+
+bool isLoggedInUser = false;
+ const String userUid = 'userId';
+ const String defaultImageUrl = 'https://i.sstatic.net/l60Hf.png';
 
 /*
 AppLanguageModel? languageModel;

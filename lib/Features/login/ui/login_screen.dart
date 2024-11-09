@@ -17,79 +17,94 @@ import '../../../res/assets_res.dart';
 import 'logic/login_cubit.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocListener<LoginCubit, LoginState>(
 
       listener: (context, state) {
-        if (state is LoginLoading || state is LoginGoogleLoading ) {
-          return buildLoading();
+        if (state is LoginLoading || state is LoginGoogleLoading) {
+          return buildLoading(context);
         } else if (state is LoginSuccess || state is LoginGoogleSuccess) {
-          snackBarAnimation(context, S.of(context).loginSuccessful,
+          snackBarAnimation(context, S
+              .of(context)
+              .loginSuccessful,
               AppColor.white, Colors.green);
+          context.pushReplacementNamed(Routes.homeScreen);
+
         } else {
           snackBarAnimation(
-              context, S.of(context).loginFailure, AppColor.white, Colors.red);
+              context, S
+              .of(context)
+              .loginFailure, AppColor.white, Colors.red);
         }
       },
       child: Scaffold(
           body: SafeArea(
               child: SingleChildScrollView(
-        child: Container(
-            width: context.width.w,
-            margin: EdgeInsetsDirectional.fromSTEB(25.w, 18.h, 20.w, 18.h),
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    S.of(context).loginTitle,
-                    style: TextStyles.fontHeading20BlackBold,
-                  ),
-                  verticalSpace(50),
-                  LoginForm(),
-                  verticalSpace(10),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: AppTextButton(
-                      backgroundColor: Colors.transparent,
-                      buttonWidth: 200.w,
-                      isBorderSide: false,
-                      buttonText: S.of(context).forgot_password,
-                      textStyle: TextStyles.fontBody16BlackMedium
-                          .copyWith(color: AppColor.primaryColor90),
-                      onPressed: () {
-                        context.pushNamed(Routes.forgetPassword);
-                      },
-                    ),
-                  ),
-                  verticalSpace(30),
-                  AppTextButton(
-                    buttonText: S.of(context).login,
-                    textStyle: TextStyles.fontHeading18BlackBold
-                        .copyWith(color: AppColor.white),
-                    onPressed: () {
-                      context.read<LoginCubit>().login();
-                    },
-                  ),
-                  verticalSpace(20),
-                  buildIfDoNotHaveAccount(context),
-                  // make line in middle word or line
-                  verticalSpace(20),
-                  LineWithText(),
-                  verticalSpace(20),
-                  SocialButton()
-                ])),
-      ))),
+                child: Container(
+                    width: context.width.w,
+                    margin: EdgeInsetsDirectional.fromSTEB(
+                        25.w, 18.h, 20.w, 18.h),
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            S
+                                .of(context)
+                                .loginTitle,
+                            style: TextStyles.fontHeading20BlackBold,
+                          ),
+                          verticalSpace(50),
+                          LoginForm(),
+                          verticalSpace(10),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: AppTextButton(
+                              backgroundColor: Colors.transparent,
+                              buttonWidth: 200.w,
+                              isBorderSide: false,
+                              buttonText: S
+                                  .of(context)
+                                  .forgot_password,
+                              textStyle: TextStyles.fontBody16BlackMedium
+                                  .copyWith(color: AppColor.primaryColor90),
+                              onPressed: () {
+                                context.pushNamed(Routes.forgetPassword);
+                              },
+                            ),
+                          ),
+                          verticalSpace(30),
+                          AppTextButton(
+                            buttonText: S
+                                .of(context)
+                                .login,
+                            textStyle: TextStyles.fontHeading18BlackBold
+                                .copyWith(color: AppColor.white),
+                            onPressed: () {
+                              context.read<LoginCubit>().login();
+                            },
+                          ),
+                          verticalSpace(20),
+                          buildIfDoNotHaveAccount(context),
+                          // make line in middle word or line
+                          verticalSpace(20),
+                          LineWithText(),
+                          verticalSpace(20),
+                          SocialButton()
+                        ])),
+              ))),
     );
   }
 
   Row buildIfDoNotHaveAccount(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
       Text(
-        S.of(context).donNotHave,
+        S
+            .of(context)
+            .donNotHave,
         style: TextStyles.fontBody14BlackRegular
             .copyWith(color: AppColor.mainBlack60),
       ),
@@ -97,16 +112,24 @@ class LoginScreen extends StatelessWidget {
         onPressed: () {
           context.pushReplacementNamed(Routes.signUpScreen);
         },
-        child: Text(S.of(context).create_account,
+        child: Text(S
+            .of(context)
+            .create_account,
             style: TextStyles.fontBody14BlackRegular
                 .copyWith(color: AppColor.primaryColor90)),
       )
     ]);
   }
 
-  void buildLoading() {
-    Center(
-      child: CircularProgressIndicator(),
+  void buildLoading(context) {
+    showDialog(
+      context: context,
+      builder: (context) =>
+          Center(
+            child: CircularProgressIndicator(
+              color: AppColor.primaryColor60,
+            ),
+          ),
     );
   }
 }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:manasa/Features/sign-up/ui/widget/form_signup.dart';
-import 'package:manasa/Features/sign-up/ui/widget/signup_bloc_listener.dart';
 import 'package:manasa/core/helper/extensions.dart';
 import 'package:manasa/core/helper/spacing.dart';
 import 'package:manasa/core/theme/styles.dart';
@@ -37,7 +36,7 @@ class _SignupScreenState extends State<SignupScreen> {
           snackBarAnimation(context, S
               .of(context)
               .registerSuccessful, AppColor.white, Colors.green);
-          // context.pushReplacementNamed(Routes.loginScreen);
+          context.pushReplacementNamed(Routes.homeScreen);
         } else {
           snackBarAnimation(context, S
               .of(context)
@@ -100,9 +99,14 @@ class _SignupScreenState extends State<SignupScreen> {
   }
 
   void buildLoading() {
-    Center(
-      child: CircularProgressIndicator(),
-    );
+    showDialog(
+    context: context,
+    builder: (context) =>  Center(
+      child: CircularProgressIndicator(
+        color: AppColor.primaryColor60,
+      ),
+    ),
+  );
   }
 
 }

@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:manasa/core/route/app_router.dart';
 
-import 'package:manasa/main.dart';
 import 'package:manasa/manasa_app.dart';
 
 void main() {

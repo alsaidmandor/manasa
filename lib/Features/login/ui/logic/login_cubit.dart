@@ -1,10 +1,11 @@
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:manasa/Features/login/data/model/login_request.dart';
-import 'package:meta/meta.dart';
 
 import '../../../../core/helper/firebase_result.dart';
+import '../../../../core/helper/shared_pref_helper.dart';
 import '../../../../core/utils/constants.dart';
 import '../../data/repository/login_repository.dart';
 
@@ -23,9 +24,9 @@ class LoginCubit extends Cubit<LoginState> {
 
       LoginRequest loginRequest = LoginRequest(email: emailController.text, password: passwordController.text);
 
-    FirebaseResult<String> result=await repository.login( request: loginRequest);
+    FirebaseResult<User>? result=await repository.login( request: loginRequest);
 
-    checkLoginnResultSuccessOrFailure(result);
+    checkLoginnResultSuccessOrFailure(result!);
   }
   //  get check auth by google or create account by google
   void loginWithGoogle() async {
@@ -35,6 +36,7 @@ class LoginCubit extends Cubit<LoginState> {
     if(result is Success<User>)
       {
         logger.i("Login with Google successful: ${result.result.uid}", stackTrace: StackTrace.current);
+        saveUserUid(result.result.uid);
         emit(LoginSuccess());
       }else if(result is Failure<User>)
       {
@@ -42,14 +44,20 @@ class LoginCubit extends Cubit<LoginState> {
         emit(LoginFailure(result.toString()));
       }
 
+
+  }
+
+  Future<void> saveUserUid(String uId) async {
+    await SharedPrefHelper.setData(userUid, uId);
   }
   void checkLoginnResultSuccessOrFailure( FirebaseResult result ){
-    if(result is Success<String>)
+    if(result is Success<User>)
     {
       logger.i("Login request: $result", stackTrace: StackTrace.current);
+      saveUserUid(result.result.uid);
       emit(LoginSuccess());
       logger.i("Success log", stackTrace: StackTrace.fromString( result.toString()));
-    }else if(result is Failure<String>)
+    }else if(result is Failure<User>)
     {
       logger.e("Error log", error: result.toString());
       emit(LoginFailure(result.toString()));

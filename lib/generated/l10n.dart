@@ -399,6 +399,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Welcome! ..`
+  String get start_message_home {
+    return Intl.message(
+      'Welcome! ..',
+      name: 'start_message_home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What would you like to learn?`
+  String get subtitle_message_home {
+    return Intl.message(
+      'What would you like to learn?',
+      name: 'subtitle_message_home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search for Courses`
+  String get search_courses {
+    return Intl.message(
+      'Search for Courses',
+      name: 'search_courses',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -34,5 +34,21 @@
   "currency": "ريال",
   "browse": "اكتشف الأقسام",
   "new_arrivals": "منتجات جديدة",
-  "see": "الكل"
+  "see": "الكل",
+  "start_message_home" : "مرحبا بك! ..",
+  "subtitle_message_home" : "ماذا تود أن تتعلم؟",
+  "search_courses": "البحث عن الكورسات",
+  "development": "تطوير",
+  "business" : "الأعمال",
+  "design" : "تصميم",
+  "marketing" : "التسويق",
+  "health & fitness" : "الصحة واللياقة",
+  "art & creativity": "الفن والإبداع",
+  "Photography" : "تصوير",
+  "Music" : "الموسيقى"
+
+
+
+
+
 }
