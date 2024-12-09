@@ -22,14 +22,20 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Music": MessageLookupByLibrary.simpleMessage("الموسيقى"),
+        "Photography": MessageLookupByLibrary.simpleMessage("تصوير"),
         "alreadyHaveAccount":
             MessageLookupByLibrary.simpleMessage("تمتلك حساب بالفعل؟ "),
+        "art_creativity": MessageLookupByLibrary.simpleMessage("الفن والإبداع"),
         "browse": MessageLookupByLibrary.simpleMessage("اكتشف الأقسام"),
+        "business": MessageLookupByLibrary.simpleMessage("الأعمال"),
         "cart": MessageLookupByLibrary.simpleMessage("السلة"),
         "categories": MessageLookupByLibrary.simpleMessage("الأقسام"),
         "create_account":
             MessageLookupByLibrary.simpleMessage(" قم بإنشاء حساب "),
         "currency": MessageLookupByLibrary.simpleMessage("ريال"),
+        "design": MessageLookupByLibrary.simpleMessage("تصميم"),
+        "development": MessageLookupByLibrary.simpleMessage("تطوير"),
         "discount": MessageLookupByLibrary.simpleMessage("خصم"),
         "donNotHave": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
@@ -41,6 +47,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
         "forgot_password_title": MessageLookupByLibrary.simpleMessage(
             "لا تقلق، ما عليك سوى كتابة بريدك الإلكتروني وسنرسل لك رسالة لإعادة إنشاء كلمة مرور جديدة"),
+        "health_fitness":
+            MessageLookupByLibrary.simpleMessage("الصحة واللياقة"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل دخول"),
         "loginFailure":
@@ -50,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginSuccessful":
             MessageLookupByLibrary.simpleMessage("تم تسجيل الدخول بنجاح!"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("سجل دخولك"),
+        "marketing": MessageLookupByLibrary.simpleMessage("التسويق"),
         "name": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
         "new_arrivals": MessageLookupByLibrary.simpleMessage("منتجات جديدة"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),

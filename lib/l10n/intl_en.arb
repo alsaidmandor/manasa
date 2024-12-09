@@ -41,9 +41,9 @@
   "business" : "Business",
   "design" : "Design",
   "marketing" : "Marketing",
-  "health & fitness" : "Health & Fitness",
-  "art & creativity": "Art & Creativity",
+  "health_fitness" :  "Health & Fitness",
+  "art_creativity": "Art & Creativity",
   "Photography" : "Photography",
-  "Music" : "Music",
+  "Music" : "Music"
 
 }
