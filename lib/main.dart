@@ -6,7 +6,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:manasa/core/helper/extensions.dart';
-
 import 'bloc_observer.dart';
 import 'core/helper/shared_pref_helper.dart';
 import 'core/route/app_router.dart';
@@ -14,6 +13,7 @@ import 'core/utils/constants.dart';
 import 'manasa_app.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
@@ -44,10 +44,12 @@ Future<void> main() async {
   );
   runApp(ManasaApp(appRouter: AppRouter()));
 }
-  checkIfLoggedInUser() async {
-    String? userId = await SharedPrefHelper.getString(userUid);
-    if (!userId!.isNullOrEmpty()) {
-      isLoggedInUser = true;
-    } else {
-      isLoggedInUser = false;
-    }}
+
+checkIfLoggedInUser() async {
+  String? userId = await SharedPrefHelper.getString(userUid);
+  if (!userId!.isNullOrEmpty()) {
+    isLoggedInUser = true;
+  } else {
+    isLoggedInUser = false;
+  }
+}

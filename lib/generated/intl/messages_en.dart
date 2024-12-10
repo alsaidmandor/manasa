@@ -22,14 +22,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Music": MessageLookupByLibrary.simpleMessage("Music"),
+        "Photography": MessageLookupByLibrary.simpleMessage("Photography"),
         "alreadyHaveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account? "),
+        "art_creativity":
+            MessageLookupByLibrary.simpleMessage("Art & Creativity"),
         "browse": MessageLookupByLibrary.simpleMessage("Explore Categories"),
+        "business": MessageLookupByLibrary.simpleMessage("Business"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "categories": MessageLookupByLibrary.simpleMessage("Categories"),
         "create_account":
             MessageLookupByLibrary.simpleMessage("Create an Account"),
         "currency": MessageLookupByLibrary.simpleMessage("Riyal"),
+        "design": MessageLookupByLibrary.simpleMessage("Design"),
+        "development": MessageLookupByLibrary.simpleMessage("Development"),
         "discount": MessageLookupByLibrary.simpleMessage("Discount"),
         "donNotHave":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
@@ -42,6 +49,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "forgot_password_title": MessageLookupByLibrary.simpleMessage(
             "Don\'t worry, just enter your email address and we\'ll send you a new password"),
+        "health_fitness":
+            MessageLookupByLibrary.simpleMessage("Health & Fitness"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginFailure":
@@ -51,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginSuccessful":
             MessageLookupByLibrary.simpleMessage(" Login successful !"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("Log In"),
+        "marketing": MessageLookupByLibrary.simpleMessage("Marketing"),
         "name": MessageLookupByLibrary.simpleMessage("Full Name"),
         "new_arrivals": MessageLookupByLibrary.simpleMessage("New Arrivals"),
         "or": MessageLookupByLibrary.simpleMessage("Or"),

@@ -42,8 +42,8 @@
   "business" : "الأعمال",
   "design" : "تصميم",
   "marketing" : "التسويق",
-  "health & fitness" : "الصحة واللياقة",
-  "art & creativity": "الفن والإبداع",
+  "health_fitness" : "الصحة واللياقة",
+  "art_creativity": "الفن والإبداع",
   "Photography" : "تصوير",
   "Music" : "الموسيقى"
 

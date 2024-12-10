@@ -429,6 +429,86 @@ class S {
       args: [],
     );
   }
+
+  /// `Development`
+  String get development {
+    return Intl.message(
+      'Development',
+      name: 'development',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Business`
+  String get business {
+    return Intl.message(
+      'Business',
+      name: 'business',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Design`
+  String get design {
+    return Intl.message(
+      'Design',
+      name: 'design',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Marketing`
+  String get marketing {
+    return Intl.message(
+      'Marketing',
+      name: 'marketing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Health & Fitness`
+  String get health_fitness {
+    return Intl.message(
+      'Health & Fitness',
+      name: 'health_fitness',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Art & Creativity`
+  String get art_creativity {
+    return Intl.message(
+      'Art & Creativity',
+      name: 'art_creativity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Photography`
+  String get Photography {
+    return Intl.message(
+      'Photography',
+      name: 'Photography',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Music`
+  String get Music {
+    return Intl.message(
+      'Music',
+      name: 'Music',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
